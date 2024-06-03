@@ -123,9 +123,9 @@ extension MySQLProtocol {
         
         /// `gb18030_chinese_ci`
         public static let gb18030: CharacterSet = 248
-        
-        /// `utf8mb4_0900_ai_ci`
-        public static let utf8mb4: CharacterSet = 255
+                
+        /// `utf8mb4_unicode_ci`
+        public static let utf8mb4: CharacterSet = 254
         
         /// `charset_nr` (2) -- number of the character set and collation
         public var rawValue: UInt8
@@ -178,7 +178,7 @@ extension MySQLProtocol {
             case .cp932: return "cp932_japanese_ci"
             case .eucjpms: return "eucjpms_japanese_ci"
             case .gb18030: return "gb18030_chinese_ci"
-            case .utf8mb4: return "utf8mb4_0900_ai_ci"
+            case .utf8mb4: return "utf8mb4_unicode_ci"
             default: return "unknown (\(self.rawValue))"
             }
         }
