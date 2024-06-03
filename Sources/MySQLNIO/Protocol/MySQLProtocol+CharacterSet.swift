@@ -125,7 +125,7 @@ extension MySQLProtocol {
         public static let gb18030: CharacterSet = 248
                 
         /// `utf8mb4_unicode_ci`
-        public static let utf8mb4: CharacterSet = 254
+        public static let utf8mb4: CharacterSet = 224
         
         /// `charset_nr` (2) -- number of the character set and collation
         public var rawValue: UInt8
